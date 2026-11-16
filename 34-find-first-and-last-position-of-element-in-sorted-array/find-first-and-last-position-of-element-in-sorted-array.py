@@ -1,10 +1,5 @@
 class Solution(object):
     def searchRange(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
         def findLeft(nums, target):
             left, right = 0, len(nums) - 1
             index = -1
@@ -33,4 +28,5 @@ class Solution(object):
 
         return [findLeft(nums, target), findRight(nums, target)]
 
+        
         
