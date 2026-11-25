@@ -10,7 +10,6 @@ class Solution:
             return False
         slow=head
         fast=head.next
-        
         while fast and fast.next:
             if slow==fast:
                 return True
